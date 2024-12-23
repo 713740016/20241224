@@ -1,0 +1,144 @@
+body {
+    font-family: 'Microsoft JhengHei', '微軟正黑體', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #1a73e8;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.question {
+    margin-bottom: 25px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease;
+}
+
+.question:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.question p {
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.options {
+    margin-left: 20px;
+}
+
+.options div {
+    margin: 12px 0;
+    padding: 8px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.options div:hover {
+    background-color: #f8f9fa;
+}
+
+.options label {
+    margin-left: 10px;
+    cursor: pointer;
+    color: #444;
+}
+
+input[type="radio"] {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    vertical-align: middle;
+}
+
+button {
+    display: block;
+    width: 200px;
+    margin: 30px auto;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+button:hover {
+    background-color: #1557b0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+#results {
+    margin-top: 30px;
+    padding: 25px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+#results h2 {
+    color: #1a73e8;
+    margin-bottom: 15px;
+}
+
+#score {
+    font-size: 2em;
+    font-weight: bold;
+    color: #1a73e8;
+}
+
+#message {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.hide {
+    display: none;
+}
+
+/* 響應式設計 */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        margin: 15px auto;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .question {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
